@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ruda', sans-serif;
+}
+
+.bi {
+    color: black;
+}
+
+.btn-exit {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    font-size: 15px;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    color: #0a2d8b;
+    font-size: 25px;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    /* background-color: #c40000; */
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+nav ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: #e9e9e9;
+    border-width: 5px;
+    box-shadow: 0px 3px 10px #464646;
+    color: #0a2d8b;
+    margin-top: 0;
+}
+
+nav ul li:hover .sub-menu-1 ul {
+    display: block;
+}
+
+nav ul li:hover .sub-menu-1 ul li {
+    width: 350px;
+    font-size: 18px;
+    text-align: left;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2% 3%;
+}
+
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 17px;
+    color: #0a2d8b;
+    font-weight: 400;
+}
+
+.nav-link-a {
+    text-decoration: none;
+    margin-top: 90%;
+    font-size: 16px;
+    color: #0a2d8b;
+    font-weight: 200;
+    margin-left: 3%;
+    text-align: center;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+
+@media screen and (max-width: 730px) {
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        margin-top: 6%;
+        margin-left: 8%;
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 5%;
+    }
+
+    .mobile-menu .nav-item a {
+        font-size: 25px;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .nav-bar {
+        padding: 1.5rem 2.5rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .open {
+        display: block;
+    }
+}
